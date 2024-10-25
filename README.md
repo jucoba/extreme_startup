@@ -38,7 +38,7 @@ bundle install
 * Start the game server
 
 ````
-bundle exec ruby web_server.rb
+ruby web_server.rb
 ````
 
 * Or the docker way

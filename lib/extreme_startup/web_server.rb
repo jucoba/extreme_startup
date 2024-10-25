@@ -1,5 +1,5 @@
-require 'sinatra/base'
 require 'httparty'
+require 'sinatra'
 require 'uuid'
 require 'haml'
 require 'socket'

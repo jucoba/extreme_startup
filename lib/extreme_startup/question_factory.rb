@@ -1,5 +1,4 @@
 require 'set'
-require 'prime'
 require 'yaml'
 
 module ExtremeStartup
@@ -12,7 +11,9 @@ module ExtremeStartup
     end
 
     def ask(player)
-      url = player.url + '?q=' + URI.escape(self.to_s)
+      p = URI::Parser.new
+      
+      url = player.url + '?q=' + p.escape(self.to_s)
       puts "GET: " + url
       begin
         response = get(url)
